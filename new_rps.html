@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors!</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link href="rps.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Rock Paper Scissors!</h1>
+        <h2>Score</h2>
+        <h3 id="playerScore">Player: 0</h3>
+        <h3 id="computerScore">Computer: 0</h3>
+        <div id="buttons">   
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissors">SCISSORS</button>
+        </div>    
+        <p>The game of rock paper scissors is all about knowing your opponent</p>
+        <script>
+            let player = ""
+            let computer = ""
+            "rock" > "scissors"
+            "paper" > "rock"
+            "scissors" > "paper"
+
+            document.querySelector('#rock').onclick = function() {
+                player = "rock"
+            }
+            document.querySelector('#paper').onclick = function() {
+                player = "paper"
+            }
+            document.querySelector('#scissors').onclick = function() {
+                player = "scissors";    
+            }
+        </script>
+    </body>
+</html>
