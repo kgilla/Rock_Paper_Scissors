@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+    background-color: #154360;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    padding: 1%;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 1%;
+}
+
+h3 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#scoreInfo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#playerInfo {
+    padding: 2%;
+}
+
+#computerInfo {
+    padding: 2%;
+}
+
+#icons {
+    font-size: 120px;
+}
+
+#rock {
+    color: #2e86c1;
+}
+
+#rock:hover {
+    color: white;
+}
+
+#paper {
+    color: #b32ec1;
+}
+
+#paper:hover {
+    color: white;
+}
+
+#scissors {
+    color: #3dc12e;
+}
+
+#scissors:hover {
+    color: white;
+}

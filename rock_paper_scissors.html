@@ -4,58 +4,13 @@
         <title>Rock Paper Scissors!</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/643e5a8a38.js" crossorigin="anonymous"></script>
-        <style>
-            body {
-                text-align: center;
-                justify-content: center;
-            }
-            header {
-              
-            }
-            
-            h1 {
-                font-weight: bold;
-                font-size: 60px;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-
-            #scoreInfo {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-            }
-            
-            #icons {
-                font-size: 80px;
-            }
-          
-            footer {
-                
-            }
-            #rock:hover{
-                color: blue;
-            }
-        </style>
-    
-    </head>
-    
-    <body>
-        
+        <link rel="stylesheet" href="rock_paper_scissors.css"> 
+    </head>  
+    <body>  
         <header>
             <h1>Rock Paper Scissors</h1>
         </header>
-        
         <main>
-            
-            <h2>Score</h2>
-            
             <section id="scoreInfo">
                 <span id="playerInfo">
                     <h3 id="playerName">Player</h3>
@@ -66,8 +21,7 @@
                     <h2 id="computerScore">0</h2>
                 </span>
             </section>
-            
-            <section id="choice">
+            <section id="icons">
                 <span id="rockBox">
                     <i class="far fa-hand-rock" id="rock"></i>
                 </span>
@@ -78,62 +32,13 @@
                     <i class="far fa-hand-scissors" id="scissors"></i>
                 </span>
             </section>
-            
-            <h2>messages show up here</h2> 
-            
-            <script>
-                
-                let player = ""; let computer = "";
-                let playerScore = 0; let computerScore = 0;
-
-                const playerChoice = document.querySelectorAll('i');
-                    playerChoice.forEach((i) => {
-                        i.addEventListener('click', (e) => {
-                            player = i.id;
-                            console.log(player);
-                        });
-                    });
-                    
-                    function computerMove() {
-                        let a = [rock, paper, scissors];
-                        let b =  Math.floor(Math.random() * 3);
-                        computer = a[b];
-                        console.log(computer);
-                    }    
-                
-                    function tally(player, computer) {
-                        if (player === computer) {
-                            return "tie";
-                        } else if (player === rock && computer === paper) {
-                            return "computer wins";
-                        } else if (player === rock && computer === scissors) {
-                            return "player wins";
-                        } else if (player === paper && computer === scissors) {
-                            return "computer wins";
-                        } else if (player === paper && computer === rock) {
-                            return "player wins";
-                        } else if (player === scissors && computer === rock) {
-                            return "computer wins";
-                        } else if (player === scissors && computer === paper) {
-                            return "player wins";
-                        } 
-                    }
-                
-                    
-                       
-                
-       
-           
-           
-           
-           
-            </script>
-        
+            <div id="message">
+                <h2 id="outcome">Click a move to play!</h2>
+            </div>
+            <script src="rock_paper_scissors.js"></script>
         </main>
-        
         <footer>
             <h5>Made by Kgilla</h5>
         </footer>    
-    
     </body>
 </html>
